@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OZIL Fashion Hub - Women's Custom Sewing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e74c3c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="OZIL Fashion Hub">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+    <link rel="preload" href="premium-features.js" as="script">
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//unpkg.com">
+    <link rel="dns-prefetch" href="//maps.googleapis.com">
+    <link rel="dns-prefetch" href="//formspree.io">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>OZIL Fashion Hub</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Landmark -->
+    <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero" data-parallax="0.3">
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Custom Sewing for <span class="highlight">Modern Women</span></h1>
+            <p class="hero-subtitle">Bringing your fashion dreams to life with precision, creativity, and elegance</p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+            <div class="floating-elements">
+                <div class="float-item thread pulse-animation"></div>
+                <div class="float-item needle rotate-animation"></div>
+                <div class="float-item button bounce-animation"></div>
+                <div class="float-item scissors swing-animation"></div>
+                <div class="float-item fabric wave-animation"></div>
+                <div class="float-item pin spin-animation"></div>
+                <div class="sparkle sparkle-1">✨</div>
+                <div class="sparkle sparkle-2">✨</div>
+                <div class="sparkle sparkle-3">✨</div>
+                <div class="sparkle sparkle-4">✨</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>About Me</h2>
+                    <p class="lead">With over 10 years of experience in custom tailoring and design, I specialize in creating beautiful, perfectly-fitted garments for women who appreciate quality craftsmanship.</p>
+                    <p>From elegant evening gowns to everyday essentials, I bring passion and precision to every stitch. My commitment to excellence and attention to detail ensures that each piece is not just clothing, but a work of art that celebrates your unique style.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Garments Created</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Your Professional Photo Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Custom Dresses</h3>
+                    <p>From cocktail dresses to formal gowns, each piece is tailored to your measurements and style preferences.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Alterations</h3>
+                    <p>Professional alterations to ensure your favorite garments fit perfectly and flatter your figure.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design Consultation</h3>
+                    <p>Work with me to create unique designs that reflect your personal style and vision.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Special Occasions</h3>
+                    <p>Wedding dresses, prom gowns, and special event attire crafted to make your moments unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
+            <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="dresses">Dresses</button>
+                <button class="filter-btn" data-filter="formal">Formal Wear</button>
+                <button class="filter-btn" data-filter="casual">Casual</button>
+                <button class="filter-btn" data-filter="alterations">Alterations</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="dresses" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Custom Dress Design</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Elegant Evening Dress</h4>
+                            <p>Custom silk evening dress with intricate beadwork</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="formal" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Wedding Gown</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Bridal Gown</h4>
+                            <p>Hand-sewn wedding dress with lace details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="casual" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Casual Wear</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Casual Chic Set</h4>
+                            <p>Comfortable yet stylish everyday wear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="formal" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Cocktail Dress</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Cocktail Dress</h4>
+                            <p>Perfect for special occasions and events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="alterations" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Before & After</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Dress Alteration</h4>
+                            <p>Perfect fit achieved through expert alterations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="dresses" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <p>Summer Dress</p>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Summer Collection</h4>
+                            <p>Light and breezy designs for warm weather</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What My Clients Say</h2>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The wedding dress she created for me was absolutely perfect. The attention to detail and craftsmanship was outstanding. I felt like a princess on my wedding day!"</p>
+                        <div class="testimonial-author">
+                            <h4>Sarah Johnson</h4>
+                            <span>Bride</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Professional, creative, and incredibly skilled. She transformed my vision into reality and the dress fits like it was made for me - because it was!"</p>
+                        <div class="testimonial-author">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I've been coming here for alterations for years. The quality is consistent and the results are always perfect. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <h4>Maria Thompson</h4>
+                            <span>Loyal Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="nav-dot active"></button>
+                <button class="nav-dot"></button>
+                <button class="nav-dot"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Oba, Anambra State<br>
+                            Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+234 913 671 4537</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@ozilfashionhub.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>
+                            Sat: 10:00 AM - 4:00 PM<br>
+                            Sun: Closed</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="custom-dress">Custom Dress</option>
+                                <option value="alterations">Alterations</option>
+                                <option value="consultation">Design Consultation</option>
+                                <option value="special-occasion">Special Occasion</option>
+                            </select>
+                            <label for="service">Service Needed</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Tell me about your project</label>
+                        </div>
+                        <!-- Hidden fields for better email formatting -->
+                        <input type="hidden" name="_subject" value="New Contact from OZIL Fashion Hub Website">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Google Maps -->
+            <div class="map-container" data-aos="fade-up">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Scripts -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>OZIL Fashion Hub</h3>
+                    <p>Creating beautiful, custom garments for the modern woman. Every stitch tells a story of craftsmanship and elegance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Oba, Anambra State, Nigeria</p>
+                    <p><i class="fas fa-phone"></i> +234 913 671 4537</p>
+                    <p><i class="fas fa-envelope"></i> info@ozilfashionhub.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 OZIL Fashion Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="premium-features.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+    
+    <!-- Analytics placeholder -->
+    <script>
+        // Google Analytics or other tracking code can go here
+        console.log('🏆 OZIL Fashion Hub - Award-winning portfolio loaded!');
+    </script>
+</body>
+</html>
