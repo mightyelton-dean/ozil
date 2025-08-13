@@ -1455,6 +1455,331 @@ h3 {
     }
 }
 
+/* Perfect Form Display Enhancements */
+.contact-form {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Form validation styles */
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+    border-color: #e74c3c;
+}
+
+.form-group input:valid,
+.form-group select:valid,
+.form-group textarea:valid {
+    border-color: #27ae60;
+}
+
+/* Loading state for form */
+.contact-form.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.contact-form.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #e74c3c;
+    border-radius: 50%;
+    animation: spin-loading 1s linear infinite;
+}
+
+@keyframes spin-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Enhanced Select Dropdown */
+.form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23666" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 40px;
+}
+
+/* Perfect viewport handling */
+@media screen and (max-width: 768px) {
+    /* Prevent horizontal scroll on mobile */
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    /* Ensure all content fits within viewport */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Fix for floating elements on small screens */
+    .floating-elements {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    /* Ensure form doesn't break layout */
+    .contact-form {
+        width: 100%;
+        min-width: 0;
+    }
+    
+    /* Perfect button sizing */
+    .btn {
+        word-wrap: break-word;
+        white-space: normal;
+        line-height: 1.4;
+    }
+}
+
+/* Ultra-wide screen optimizations */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-content {
+        max-width: 600px;
+    }
+    
+    .floating-elements {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+/* High DPI/Retina display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .service-icon,
+    .contact-icon {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Perfect flexbox fallbacks */
+@supports not (display: grid) {
+    .services-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .service-card {
+        flex: 1 1 300px;
+        margin: 10px;
+    }
+    
+    .portfolio-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .portfolio-item {
+        flex: 1 1 350px;
+        margin: 10px;
+    }
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        -webkit-appearance: none;
+    }
+    
+    .btn {
+        -webkit-appearance: none;
+        border-radius: 30px;
+    }
+}
+
+/* Perfect print styles */
+@media print {
+    .navbar,
+    .floating-elements,
+    .contact-form,
+    .map-container {
+        display: none;
+    }
+    
+    .hero,
+    .about,
+    .services,
+    .portfolio {
+        page-break-inside: avoid;
+    }
+    
+    .section-title {
+        page-break-after: avoid;
+    }
+}
+
+/* Perfect accessibility enhancements */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        background: #000;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+    
+    .btn-secondary {
+        background: #fff;
+        color: #000;
+        border: 2px solid #000;
+    }
+    
+    .service-card,
+    .portfolio-item,
+    .testimonial-content {
+        border: 2px solid #333;
+    }
+}
+
+/* Perfect focus management */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 10000;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Enhanced focus indicators */
+*:focus {
+    outline: 2px solid #e74c3c;
+    outline-offset: 2px;
+}
+
+.btn:focus,
+.nav-link:focus,
+.filter-btn:focus {
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.3);
+}
+
+/* Perfect mobile keyboard handling */
+@media screen and (max-height: 500px) {
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+        -webkit-appearance: none;
+        border-radius: 10px;
+    }
+    
+    .hero {
+        min-height: -webkit-fill-available;
+    }
+}
+
+/* Perfect smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Enhanced loading states */
+.image-placeholder.loading::before {
+    animation-duration: 1.5s;
+}
+
+/* Perfect responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure perfect layout stability */
+.hero-content,
+.about-content,
+.services-grid,
+.portfolio-grid {
+    contain: layout;
+}
+
+/* Perfect form submission state */
+.contact-form[data-submitting="true"] {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.contact-form[data-submitting="true"] .btn {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Enhanced error states */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+.form-group.error label {
+    color: #e74c3c;
+}
+
+/* Success states */
+.form-group.success input,
+.form-group.success select,
+.form-group.success textarea {
+    border-color: #27ae60;
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.3);
+}
+
+.form-group.success label {
+    color: #27ae60;
+}
+
 /* Scroll animations */
 [data-aos] {
     opacity: 0;
