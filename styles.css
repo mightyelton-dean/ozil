@@ -1,4 +1,33 @@
 /* Reset and Base Styles */
+/* Glowing color-changing effect for About photo */
+.glow-photo {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 40px 10px #e74c3c, 0 0 80px 20px #f1c40f,
+    0 0 120px 30px #8e44ad;
+  animation: glowColors 2.5s infinite alternate;
+}
+
+@keyframes glowColors {
+  0% {
+    box-shadow: 0 0 40px 10px #e74c3c, 0 0 80px 20px #f1c40f,
+      0 0 120px 30px #8e44ad;
+  }
+  33% {
+    box-shadow: 0 0 40px 10px #3498db, 0 0 80px 20px #2ecc71,
+      0 0 120px 30px #f39c12;
+  }
+  66% {
+    box-shadow: 0 0 40px 10px #9b59b6, 0 0 80px 20px #e67e22,
+      0 0 120px 30px #1abc9c;
+  }
+  100% {
+    box-shadow: 0 0 40px 10px #e74c3c, 0 0 80px 20px #f1c40f,
+      0 0 120px 30px #8e44ad;
+  }
+}
 * {
   margin: 0;
   padding: 0;
